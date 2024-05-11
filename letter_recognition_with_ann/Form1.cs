@@ -108,7 +108,7 @@ namespace letter_recognition_with_ann
                 }
                 k++;
             }
-            MessageBox.Show(epochs.ToString());
+            MessageBox.Show($"Itearation value: {k.ToString()}");
             aNeural = ann;
 
         }
@@ -282,7 +282,7 @@ namespace letter_recognition_with_ann
                 MessageBox.Show("Values are loaded!!!");
             }catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show(ex.Message + " " + "Weights are started with initial values");
             }
            
         }
